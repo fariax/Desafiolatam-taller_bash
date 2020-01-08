@@ -26,7 +26,7 @@ Esta guia te sirve si:
 
 ## Formatos de esta guia
 Entrego esta guia en dos formatos, con el timepo puede que suba un PDF.
-En lo personal me gusta Jupyter Notebook por ser mas versatil y poe que ... si...
+En lo personal me gusta Jupyter Notebook por ser mas versatil y por que... si...
 
 - Markdown: [Taller bash](https://github.com/fariax/Desafiolatam-taller_bash/blob/master/Taller-Bash.md)
 - Jupyter Notebook: [Taller bash](https://github.com/fariax/Desafiolatam-taller_bash/blob/master/Taller-Bash.ipynb)
