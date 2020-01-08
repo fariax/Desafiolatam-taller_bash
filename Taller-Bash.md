@@ -3,6 +3,8 @@
 
 # Taller de bash - Guia de iniciación
 
+<h1>Tabla de contenidos<span class="tocSkip"></span></h1>
+<div class="toc"><ul class="toc-item"><li><span><a href="#Taller-de-bash---Guia-de-iniciación" data-toc-modified-id="Taller-de-bash---Guia-de-iniciación-1">Taller de bash - Guia de iniciación</a></span><ul class="toc-item"><li><span><a href="#Presentación" data-toc-modified-id="Presentación-1.1">Presentación</a></span></li><li><span><a href="#Plataformas-de-trabajo" data-toc-modified-id="Plataformas-de-trabajo-1.2">Plataformas de trabajo</a></span></li><li><span><a href="#Algunos-datos-útiles-sobre-la-linea-de-comandos-(CLI)" data-toc-modified-id="Algunos-datos-útiles-sobre-la-linea-de-comandos-(CLI)-1.3">Algunos datos útiles sobre la linea de comandos (CLI)</a></span><ul class="toc-item"><li><span><a href="#El-simbolo-de-sistema" data-toc-modified-id="El-simbolo-de-sistema-1.3.1">El simbolo de sistema</a></span></li><li><span><a href="#El-directorio-home" data-toc-modified-id="El-directorio-home-1.3.2">El directorio home</a></span></li><li><span><a href="#El-entorno-de-usuario" data-toc-modified-id="El-entorno-de-usuario-1.3.3">El entorno de usuario</a></span></li><li><span><a href="#Paginas-de-manual." data-toc-modified-id="Paginas-de-manual.-1.3.4">Paginas de manual.</a></span></li></ul></li><li><span><a href="#Comandos-básicos-para-trabajar-con-directorios" data-toc-modified-id="Comandos-básicos-para-trabajar-con-directorios-1.4">Comandos básicos para trabajar con directorios</a></span></li><li><span><a href="#Comandos-básicos-para-trabajo-con-archivos" data-toc-modified-id="Comandos-básicos-para-trabajo-con-archivos-1.5">Comandos básicos para trabajo con archivos</a></span></li><li><span><a href="#Algunos-trucos" data-toc-modified-id="Algunos-trucos-1.6">Algunos trucos</a></span></li><li><span><a href="#Imprimiendo-en-pantalla" data-toc-modified-id="Imprimiendo-en-pantalla-1.7">Imprimiendo en pantalla</a></span></li><li><span><a href="#Contando-cosas" data-toc-modified-id="Contando-cosas-1.8">Contando cosas</a></span></li><li><span><a href="#Parámetros-y-opciones" data-toc-modified-id="Parámetros-y-opciones-1.9">Parámetros y opciones</a></span></li><li><span><a href="#Imprimiendo-cosas-a-un-archivo" data-toc-modified-id="Imprimiendo-cosas-a-un-archivo-1.10">Imprimiendo cosas a un archivo</a></span></li><li><span><a href="#Filtrando-datos" data-toc-modified-id="Filtrando-datos-1.11">Filtrando datos</a></span></li><li><span><a href="#Valores-únicos-y-ordenados." data-toc-modified-id="Valores-únicos-y-ordenados.-1.12">Valores únicos y ordenados.</a></span></li><li><span><a href="#Pipes-o-tuberías." data-toc-modified-id="Pipes-o-tuberías.-1.13">Pipes o tuberías.</a></span></li><li><span><a href="#Automatizar-tareas" data-toc-modified-id="Automatizar-tareas-1.14">Automatizar tareas</a></span></li><li><span><a href="#Scripting-con-BASH" data-toc-modified-id="Scripting-con-BASH-1.15">Scripting con BASH</a></span></li><li><span><a href="#Variables" data-toc-modified-id="Variables-1.16">Variables</a></span></li><li><span><a href="#Condicionales-con-IF" data-toc-modified-id="Condicionales-con-IF-1.17">Condicionales con IF</a></span></li><li><span><a href="#Loops" data-toc-modified-id="Loops-1.18">Loops</a></span></li><li><span><a href="#Otros-comandos-utiles" data-toc-modified-id="Otros-comandos-utiles-1.19">Otros comandos utiles</a></span></li></ul></li></ul></div>
 
 ## Presentación
 
@@ -131,7 +133,7 @@ En algunos sistemas están disponibles también las siguientes secciones:
 | n | Tcl/Tk |
 | x | X Window System (Entorno grafico) |
 
-## Comandos basicos para trabajar con directorios
+## Comandos básicos para trabajar con directorios
 
 `pwd`  
 Imprime el directorio donde estas trabajando, osea, donde estas "parado".
@@ -155,13 +157,13 @@ Esto es para devolverse un nivel hacia atrás.
 Esto permite devolverte al directorio de trabajo anterior.
 
 `rmdir undir`  
-Si el directorio esta vacío, lo elimina.  Si no esta vacío se debe usar el comando `rm`.
-**ATENCION: No existe papelera de reciclaje, el directorio se elimina inmediatamente.**
+Si el directorio esta vacío, lo elimina.  Si no esta vacío se debe usar el comando `rm`.  
+**ATENCIÓN: No existe papelera de reciclaje, el directorio se elimina inmediatamente.**
 
-## Comandos basicos patra trabajo con archivos
+## Comandos básicos para trabajo con archivos
 
 `touch prueba.txt`  
-Crea un archivo vacio llamado `prueba.txt`.
+Crea un archivo vacío llamado `prueba.txt`.
 
 `cp prueba.txt copia_prueba.txt`  
 Copia el archivo `prueba.txt` a un nuevo archivo llamado `copia_prueba.txt`
@@ -179,7 +181,7 @@ Renombra el archivo `prueba.txt` a `nueva_prueba.txt`
 
 `rm prueba.txt`  
 Borra el archivo `prueba.txt`.  
-**ATENCION: No existe papelera de reciclaje, el archivo se elimina inmediatamente.**
+**ATENCIÓN: No existe papelera de reciclaje, el archivo se elimina inmediatamente.**
 
 ## Algunos trucos
 
@@ -195,9 +197,9 @@ Borra el archivo `prueba.txt`.
 4. Se pueden autocompletar comandos, archivos, directorios, etc... con la tecla tabular (→).
 
 
-5. Con la combinacion `Ctlr-R` puedes tipear un comando y se buscara el ultimo ejecutado que coincida con lo tipeado en el historial.
+5. Con la combinacion `Ctrl-R` puedes tipear un comando y se buscara el ultimo ejecutado que coincida con lo tipeado en el historial.
 
-## Imprimiendo cosas en pantalla
+## Imprimiendo en pantalla
 
 `echo "Hello, World!"`  
 Imprime Hello, World! en tu pantalla.
@@ -231,60 +233,60 @@ Cuenta el numero de palabras en el archivo `datos.csv` y los informa en pantalla
 `wc -c datos.csv`  
 Cuenta el numero de caracteres en el archivo `datos.csv` y los informa en pantalla. (Nota: `-c` se refiere a "chars".)
 
-## Parametros y opciones
+## Parámetros y opciones
 
-Los parametros de los comandos pueden modificar el comportamiento original de estos.
-Casi todos los comandos tienen multiples opciones.
+Los parámetros de los comandos pueden modificar el comportamiento original de estos.
+Casi todos los comandos tienen múltiples opciones.
 Estas se pueden aplicar de la siguiente forma:
 
-  1. Escribe el comando sin parametros (ej: `wc`)
+  1. Escribe el comando sin parámetros (ej: `wc`)
   2. Agrega un espacio y un guion (ej: ` -`)
-  3. Agrega la opcion (ej: `w`)
+  3. Agrega la opción (ej: `w`)
 
 Resultado: `wc -w`
 
-En general el paso de parametros en los comandos puede variar, algunos como `ps` o `tar`aceptan las opciones sin guiones,  otros como `wc` se le pasan los comandos con un solo guion y a otros aceptan comandos con uno y dos guiones.
+En general el paso de parámetros en los comandos puede variar, algunos como `ps` o `tar`aceptan las opciones sin guiones,  otros como `wc` se le pasan los comandos con un solo guion y a otros aceptan comandos con uno y dos guiones.
 
 
-En general sintaxis de los parametros de los comandos es la siguiente:
+En general sintaxis de los parámetros de los comandos es la siguiente:
 
-1. `comando -opcion`
-2. `comando --opcion`
+1. `comando -opción`
+2. `comando --opción`
 
-Si se quiere saber cuales son los parametos y opciones para los comandos existen dos formas:
+Si se quiere saber cuales son los parámetros y opciones para los comandos existen dos formas:
 
-1. **La forma rapida**:  `comando --help` o en algunos casos `comando -help`
-2. **La pagina de manual**: `man comando`, (para mas informacion, siempre puede hace un `man man`)
+1. **La forma rápida**:  `comando --help` o en algunos casos `comando -help`
+2. **La pagina de manual**: `man comando`, (para mas información, siempre puede hace un `man man`)
 
 Algunos Ejemplos:
 
 `wc -w datos.csv`  
 Como ya sabemos, `wc` cuenta el numero de lineas, palabras y caracteres en el archivo datos.csv y los imprime en pantalla.
-En este caso modificamos el comportamiento con el parametro `-w` para que solo cuente las palabras.
+En este caso modificamos el comportamiento con el parámetro `-w` para que solo cuente las palabras.
 
 `ls -l`  
 En este caso sabemos que `ls` lista todo el contenido de un directorio.
-Pero en este caso el parametro `-l` cambia el formato de salida y muestra mayor informacion sobre los archivos y directorios.
+Pero en este caso el parámetro `-l` cambia el formato de salida y muestra mayor información sobre los archivos y directorios.
 
 ## Imprimiendo cosas a un archivo
 
-En algunos casos y principalmente en proyectos mas complejos no necesitamos imprimir datos a pantalla sino que necesitamos salvar los resultados en archivos para poder trabajarlos despues.
+En algunos casos y principalmente en proyectos mas complejos no necesitamos imprimir datos a pantalla sino que necesitamos salvar los resultados en archivos para poder trabajarlos después.
 
-Es aqui donde aparecen los caracteres de **redireccion** que nos permiten enviar la salida de un comando hacia un archivo.
+Es aquí donde aparecen los caracteres de **redirección** que nos permiten enviar la salida de un comando hacia un archivo.
 
-Los caracteres de redireccion pueden ser de dos tipos:
+Los caracteres de redirección pueden ser de dos tipos:
 1. `>`: Toma la salida del comando y lo direcciona a un archivo, si el archivo existe este se reescribe desde cero.
-2. `>>`: toma la salida del comando y lo direcciona al final de un archvio, si el archivo existe el contenido se agrega despues de la ultima linea.
+2. `>>`: toma la salida del comando y lo direcciona al final de un archivo, si el archivo existe el contenido se agrega después de la ultima linea.
 
 Por ejemplo:
 
 `head datos.csv > datos_diez_primeros.csv`  
 Toma las primeras 10 lineas del archivo `datos.csv` y las envia a un archivo llamado `datos_diez_primeros.csv`.  
 Si el archivo no existe lo crea.  
-Si el archivo existe lo sobreescribe.  
+Si el archivo existe lo sobrescribe.  
 
 `head datos.csv >> datos_variados.csv`  
-Toma las primeras 10 lineas del archivo `datos.csv` y las envia a un archivo llamado `datos_variados.csv`.  
+Toma las primeras 10 lineas del archivo `datos.csv` y las envía a un archivo llamado `datos_variados.csv`.  
 Si el archivo no existe lo crea.  
 Si el archivo existe agrega el contenido al final del archivo manteniendo el contenido original.  
 
@@ -293,42 +295,42 @@ Si el archivo existe agrega el contenido al final del archivo manteniendo el con
 Si tenemos un archivo `datos.csv` que es un conjunto de datos separados por `;` y queremos mostrar solo la primera columna del archivo, podemos ejecutar lo siguiente:
 
 `cut -d';' -f1 datos.csv`  
-El comando `cut` corta la entrada que se le entrega de acuerdo a los parametros que se le pasan.  
-En este caso se le dice que use como delimitador `-d` el simbolo `;` y que ademas solo muestre la primera columna `-f1` del archivo `datos.csv`.
+El comando `cut` corta la entrada que se le entrega de acuerdo a los parámetros que se le pasan.  
+En este caso se le dice que use como delimitador `-d` el símbolo `;` y que ademas solo muestre la primera columna `-f1` del archivo `datos.csv`.
 
 `cut -d'-' -f1,5,12,13 datos.csv`  
 Este es un ejemplo parecido que el anterior pero se le dice que use como delimitador el caracter `-` y que imprima las columnas 1, 5, 12 y 13 del archivo `datos.csv`.
 
 `grep "algo" datos.csv`  
 Este comando retornara todas las lineas que contienen el string "algo" dentro del archivo `datos.csv`.  
-Por defecto, este comando diferencia entre mayusculas y minusculas.
+Por defecto, este comando diferencia entre mayúsculas y minúsculas.
 
 `grep -v "algo" datos.csv`  
 Por el contrario del comando anterior, este comando retorna todas las lineas que **NO** contienen el string "algo" dentro del archivo `datos.csv`  
 
 `grep -i "ALGO" datos.csv`  
 Este comando retornara todas las lineas que contienen el string dentro del archivo `datos.csv`.  
-En este caso, con el parametro `-i`, **NO** diferencia entre mayusculas y minusculas.  
+En este caso, con el parametro `-i`, **NO** diferencia entre mayúsculas y minúsculas.  
 
-## Valores unicos y ordenados.
+## Valores únicos y ordenados.
 
 `sort datos.csv`  
-Muestra en su salida, el archivo ordenado por orden alfabetico.
+Muestra en su salida, el archivo ordenado por orden alfabético.
 
 `sort -n datos.csv`  
-Muestra en su salida, el archivo ordenado por orden numerico.
+Muestra en su salida, el archivo ordenado por orden numérico.
 
 `sort -r datos.csv`  
-Muestra en su salida, el archivo ordenado por orden alfabetico pero de forma reversa.
+Muestra en su salida, el archivo ordenado por orden alfabético pero de forma reversa.
 
 `sort -r -n datos.csv`  
-Muestra en su salida, el archivo ordenado por orden numerico pero en reversa.
+Muestra en su salida, el archivo ordenado por orden numérico pero en reversa.
 
 `sort -u datos.csv`  
-Muestra en su salida, el archivo ordenado por orden alfabetico y remueve los duplicados (Nota: `-u` se refiere a unique.)
+Muestra en su salida, el archivo ordenado por orden alfabético y remueve los duplicados (Nota: `-u` se refiere a unique.)
 
 `sort -n -t',' -k2 datos.csv`  
-Muestra en su salida, el archivo ordenado por orden numerico (`-n`) por la segunda columna (`-k2`), utilizando un separador de columnas (`-t`) que es el caracter `,`. 
+Muestra en su salida, el archivo ordenado por orden numérico (`-n`) por la segunda columna (`-k2`), utilizando un separador de columnas (`-t`) que es el caracter `,`. 
 
 `uniq datos.csv`  
 Muestra en su salida el contenido del archivo sin valores repetidos.
@@ -336,11 +338,11 @@ Muestra en su salida el contenido del archivo sin valores repetidos.
 `uniq -c datos.csv`  
 Muestra en su salida el contenido del archivo sin valores repetidos y contando el numero de ocurrencias.
 
-## Pipes o tuberias.
+## Pipes o tuberías.
 
-En proyectos mas complejos, existen ocaciones en que es necesario pasar la salida de un comando por la entrada de otros.  Para esto se pueden utilizar archivos pero en grandes volumenes de datos esto puede ser muy poco conveniente.
+En proyectos mas complejos, existen ocasiones en que es necesario pasar la salida de un comando por la entrada de otros.  Para esto se pueden utilizar archivos pero en grandes volúmenes de datos esto puede ser muy poco conveniente.
 
-Es en estos casos cuando podemos usar los **pipes** o tuberias, estos permiten conectar salidas y entradas de comandos haciendo que se comporten como si fuera uno.
+Es en estos casos cuando podemos usar los **pipes** o tuberías, estos permiten conectar salidas y entradas de comandos haciendo que se comporten como si fuera uno.
 
 Estos pipes se utilizan con el caracter `|`.
 
@@ -348,65 +350,65 @@ Por ejemplo:
 `head -50 datos.csv | tail -10`  
 Este comando muestra las lineas 41 a la 50 del archivo `datos.csv` de la siguiente manera:
 
-1. Toma el archivo `datos.csv` y a traves de `head` solicita las primeras 50 lineas.
-- Luego, la salida de `head` es pasada a traves de una tuberia hacia el comando `tail`.
+1. Toma el archivo `datos.csv` y a través de `head` solicita las primeras 50 lineas.
+- Luego, la salida de `head` es pasada a través de una tubería hacia el comando `tail`.
 - finalmente el comando `tail` muestra las ultimas 10 lineas de la salida del comando `head`.
 
 `sort datos.csv | uniq -c`  
-En este caso, se solicita la salida del archivo `datos.csv`de forma ordenada y despues, atraves de una tuberia, se ingresa la salida al comando `uniq` el cual contara las ourrencias por cada fila unica.
+En este caso, se solicita la salida del archivo `datos.csv`de forma ordenada y después, a través de una tubería, se ingresa la salida al comando `uniq` el cual contara las ocurrencias por cada fila única.
 
 `cut -d';' -f1 datos.csv | grep "algo" | wc -l`  
 Este comando ejecuta lo siguiente:
 
-1. Muestre la primera columna del archivo `datos.csv` usando como delimitador el simbolo `;`.
+1. Muestre la primera columna del archivo `datos.csv` usando como delimitador el símbolo `;`.
 - Busque dentro de la salida del comando `cut` el string "algo".
 - Cuente la cantidad de lineas donde el string "algo" aparece.
 
 ## Automatizar tareas
 
-Se pueden automatizar tareas, scripts y comandos para que se ejecuten automaticamente cada dia, hora o incluso cada minuto.
+Se pueden automatizar tareas, scripts y comandos para que se ejecuten automaticamente cada día, hora o incluso cada minuto.
 
-Para esto todo sistema unix tiene una utilidad llamada `cron` y es posible configurarla con el comando `crontab -e`.  Esto abrira un editor en donde se podra agregar la configuracion de la tarea.
+Para esto todo sistema unix tiene una utilidad llamada `cron` y es posible configurarla con el comando `crontab -e`.  Esto abrirá un editor en donde se podrá agregar la configuración de la tarea.
 
-La configuracion se realiza agregando una linea por tarea que se quiera programar, cada linea tiene la siguiente sintaxis:
+La configuración se realiza agregando una linea por tarea que se quiera programar, cada linea tiene la siguiente sintaxis:
 
 `* * * * * usuario    /tu/comando.sh`
 
 Que significa lo siguiente: 
 
 1. El minuto de la hora en que debe ser ejecutado.
-- Hora del dia en que debe ser ejecutado.
-- Dia del mes en que debe ser ejecutado.
+- Hora del día en que debe ser ejecutado.
+- Día del mes en que debe ser ejecutado.
 - Mes en que debe ser ejecutado.
-- Dia de la semana en que debe ser ejecutado.
+- Día de la semana en que debe ser ejecutado.
 - Usuario que debe ejecutarlo (opcional).
 - Comando que debe ser ejecutado.
 
-Los primeros cinco parametros definen cuando debe ser ejecutado y el sexto define quien y el septimo define que debe ser ejecutado.
+Los primeros cinco parámetros definen cuando debe ser ejecutado y el sexto define quien y el séptimo define que debe ser ejecutado.
 
-El simbolo `*` es un comodin que significa *todos*.
+El símbolo `*` es un comodín que significa *todos*.
 
 ![Crontab File](img/crontab.png)
 
 Por ejemplo:  
 
 `15 00 * * * /home/usuario/script.sh`  
-Ejecutara el `script.sh` a las 00:15 horas, todos los dias del mes, todos los meses, todos los dias de semana.
+Ejecutara el `script.sh` a las 00:15 horas, todos los días del mes, todos los meses, todos los días de semana.
 
 Una ayuda muy buena para programar tareas con cron es la pagina: https://crontab.guru/
-En ella pueden obtener muchas opciones de ejecucion para luego copiar y pegar en su archivo crontab.
+En ella pueden obtener muchas opciones de ejecución para luego copiar y pegar en su archivo crontab.
 
 ## Scripting con BASH
 
-Un script no es mas que un conjunto de comandos utiles ejecutandose juntos y en orden para crear otro comando util.
+Un script no es mas que un conjunto de comandos útiles ejecutándose juntos y en orden para crear otro comando útil.
 
 Para crear un script necesitas saber usar un editor como `vim`, `emacs` o `nano`.
 
-Si no sabes nada de editores te recomiendo `nano` o uno poco conocido llamado `mcedit` el cual te entrega una interfaz sencilla dentro de la consola de comandos y que se maneja con las teclas de funcion.
+Si no sabes nada de editores te recomiendo `nano` o uno poco conocido llamado `mcedit` el cual te entrega una interfaz sencilla dentro de la consola de comandos y que se maneja con las teclas de función.
 
-Para instalar mcedit debes instalar el paquete "**Midnight Commander**" (llamado comunmente mc) en tu distribucion, o visitar su sitio web: https://midnight-commander.org/
+Para instalar mcedit debes instalar el paquete "**Midnight Commander**" (llamado comúnmente mc) en tu distribución, o visitar su sitio web: https://midnight-commander.org/
 
-**Midnight Commander** es una herramienta de exploracion de archivos tipo *Norton Commander* que entrega muchas utilidades para la consola.
+**Midnight Commander** es una herramienta de exploración de archivos tipo *Norton Commander* que entrega muchas utilidades para la consola incluyendo conexión de red, ftp, etc.
 
 ![mcedit](img/mcedit.png)
 
@@ -423,13 +425,13 @@ Para crear un script paso a paso:
   ```
 - En la primera linea del archivo escriba `#!/usr/bin/env bash`.
   Esta linea se llama shebang y le dice al script que debe ejecutarlo con bash.
-  Tambien es valido escribir `#!/bin/bash`
-- Guarde su archivo en el mismo directorio donde esta `datos.csv` y nombrelo como plazca, por ejemplo: `mi_script.sh`
-- Debe darle permisos de ejecucion al archivo para que pueda hacer algo: `chmod +x mi_script.sh`
+  También es valido escribir `#!/bin/bash`
+- Guarde su archivo en el mismo directorio donde esta `datos.csv` y nómbrelo como plazca, por ejemplo: `mi_script.sh`
+- Debe darle permisos de ejecución al archivo para que pueda hacer algo: `chmod +x mi_script.sh`
 - Ejecute el archivo ./mi_script.sh
 - LISTO!!
 
-Deberia quedar algo como esto:
+Debería quedar algo como esto:
 
 ![mcedit](img/script.png)
 
@@ -448,7 +450,7 @@ Ya tenemos nuestro primer script.
 En bash podemos asignar valores a variables de forma simple ejecutando lo siguiente:
 `VARIABLE=VALOR`
 
-Por convencion se utilizan nombres en mayusculas para diferenciarlos.
+Por convención se utilizan nombres en mayúsculas para diferenciarlos.
 
 
 Por Ejemplo:  
@@ -459,7 +461,7 @@ VERDAD=true
 VALOR=0.75
 ```
 
-Para llamar la variable debe hacerce con el signo `$` delante:
+Para llamar la variable debe hacerse con el signo `$` delante:
 
 `echo $A`  
 100
@@ -475,7 +477,7 @@ true.
 
 ## Condicionales con IF
 
-Como se dijo anteriormente, todos los comandos y propiedades de bash formanun lenguaje de programacion rico y lleno de opciones.  En este caso tambien cuenta con condicionales las cuales cumplen el siguiente criterio:
+Como se dijo anteriormente, todos los comandos y propiedades de bash forman un lenguaje de programación rico y lleno de opciones.  En este caso también cuenta con condicionales las cuales cumplen el siguiente criterio:
 
 ```bash
 A=10
@@ -487,12 +489,12 @@ else
 fi
 ```
 
-El caracter `[` es un alias del comando `test` el cual permite evaluar las condicionantes.  Si la evaluacion de `test` es true se ejecuta el comando `echo yes` si es falsa (sino o `else`) se ejecuta `echo no`.
+El caracter `[` es un alias del comando `test` el cual permite evaluar las condicionantes.  Si la evaluación de `test` es true se ejecuta el comando `echo yes` si es falsa (sino o `else`) se ejecuta `echo no`.
 
-Mucha informacion se puede encontrar en la pagina de manual de `test` a traves del comando `man test`.
+Mucha información se puede encontrar en la pagina de manual de `test` a través del comando `man test`.
 
 ## Loops
-Bash tambien cuenta con loops al igual que cualquier lenguaje y estos pueden ser con `while`, si se requiere la evaluacion de una condicion o con `for` si se requiere iterar rapidamente.
+Bash también cuenta con loops al igual que cualquier lenguaje y estos pueden ser con `while`, si se requiere la evaluación de una condición o con `for` si se requiere iterar rápidamente.
 
 **Ejemplo `while`:**
 
@@ -503,7 +505,7 @@ while [ $I -lt 10 ]; do
     I=$((i + 1))
 done
 ```
-En este caso se define unavariable `$I` y se le indica a `while` que se repita mientras `$I` sea menor que 10 (`[ $I -lt 10 ]`), luego se imprime `$I` y se aumenta `$I` en uno (`$((i + 1))`).  
+En este caso se define una variable `$I` y se le indica a `while` que se repita mientras `$I` sea menor que 10 (`[ $I -lt 10 ]`), luego se imprime `$I` y se aumenta `$I` en uno (`$((i + 1))`).  
 
 El ciclo se repite hasta que se deja de cumplir la condicional.
 
@@ -528,9 +530,9 @@ for OUTPUT in $(UnComandoAqui); do
 done
 ```
 
-En estos casos se utiliza for sobre diferentes iterables como pueden ser numeros, archivos o salidas de comandos.  Las opciones son muchas.
+En estos casos se utiliza for sobre diferentes iterables como pueden ser números, archivos o salidas de comandos.  Las opciones son muchas.
 
-`for` tambien ofrece la posibilidad de evaluar expresiones como `while`, en este caso sigue una sintaxis parecida al lenguaje  C:
+`for` también ofrece la posibilidad de evaluar expresiones como `while`, en este caso sigue una sintaxis parecida al lenguaje  C:
 
 ```bash
 for (( c=1; c<=5; c++ )); do  
@@ -541,7 +543,7 @@ done
 Y en el caso de necesitar un loop infinito:
 ```bash
 for (( ; ; )); do  
-   echo "Loop infinito [ precione CTRL+C para detener]"
+   echo "Loop infinito [ presione CTRL+C para detener]"
 done
 ```
 
@@ -550,7 +552,7 @@ done
 
 `echo "hola mundo!`  
 hola mundo!  
-`echo` repite todo lo que se le pasa como parametro.
+`echo` repite todo lo que se le pasa como parámetro.
 
 `sed`  
 `sed` fue creado para analizar y transformar texto en la línea de comando.
@@ -570,15 +572,10 @@ Imprime la fecha en el siguiente formato yyyy-mm-dd. (2019-10-10)
 
 `awk`  
 `awk` es otra gran herramienta para procesamiento de texto y limpieza de datos.  
-Con `awk` se podria dedicar un curso completo ya que representa un lenguaje de programacion en si.
+Con `awk` se podría dedicar un curso completo ya que representa un lenguaje de programación en si.
 
 `awk -F',' '{print $3,$2,$5}' datos.csv`  
 Imprime la 3°, 2° y 5° columna (en ese orden) del archivo `datos.csv` que esta delimitado por `,`.
 
 `awk '{sss+=$1} END {print sss}' solo_numeros.csv`  
-Suma todos los numeros de la primera columna del archivo `solo_numeros.csv`.
-
-
-```python
-
-```
+Suma todos los números de la primera columna del archivo `solo_numeros.csv`.
